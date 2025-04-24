@@ -45,7 +45,7 @@ def check_winner():
     for col in range(3):
         if (game_board[0][col]["text"] == game_board[1][col]["text"]
             == game_board[2][col]["text"] and game_board[0][col]["text"] != ""):
-            label.config(text=game_board[col][0]["text"] + " is the winner!", foreground=orange_color)
+            label.config(text=game_board[0][col]["text"] + " is the winner!", foreground=orange_color)
             # add color effect to winning arrangement
             for row in range(3):
                 game_board[row][col].config(foreground=orange_color, background=white_color)
